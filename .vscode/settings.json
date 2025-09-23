@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.h_old": "cpp",
+        "arduino_gfx_library.h": "c",
+        "arduino_rgb_display.h": "c",
+        "arduino_esp32dsipanel.h": "c"
+    }
+}

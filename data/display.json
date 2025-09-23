@@ -1,0 +1,45 @@
+{
+    "bkgrd":"#0b0c4c",
+    "swbtn":[{
+            "x":11, 
+            "y":10, 
+            "wdt":146, 
+            "hgt":460,
+            "rds":20,  
+            "clr":"#2d2d4c", 
+            "txt_x":40, 
+            "txt_y":0, 
+            "sz_txt":24, 
+            "clr_txt":"#ffffff",
+            "nm_txt":"Test",
+            "bool_clr_lgt":true,
+            "lgths":[{
+                "x":71, 
+                "y":140, 
+                "wdt":4, 
+                "hgt":180,
+                "rds":20,  
+                "color_on":"#00ff00",
+                "color_off":"#ff0000"
+            },
+            {
+                "x":81, 
+                "y":140, 
+                "wdt":4, 
+                "hgt":180,
+                "rds":20,  
+                "color_on":"#00ff00",
+                "color_off":"#ff0000"
+            },
+            {
+                "x":61, 
+                "y":140, 
+                "wdt":4, 
+                "hgt":180,
+                "rds":20,  
+                "color_on":"#00ff00",
+                "color_off":"#ff0000"
+            }]
+
+    }]
+}

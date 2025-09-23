@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #020545;
+    padding: 0 10px;
+}
+input[type="number"] {
+    width: 10em;
+  }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.disabled{
+    display: none !important;
+}
+#host_name {
+    color:white;
+}
+.button-add {
+    height: 50px;
+    width: 50px;
+    font-size: 74px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50% !important;
+    border: 2px solid white;
+}
+.button-add:hover{
+    border: 2px solid gray;
+    color: gray;
+}
+.button-light {
+    width: 5px;
+    height: 90px;
+}
+.button-light-red {
+    background: red;
+}
+.button-light-green {
+    background: limegreen;
+}
+.edit-form {
+    display: flex;
+    /* align-items: center; */
+}
+.edit-form-element {
+    display: flex;
+    color: white;
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    min-width: 200px;
+}
+.edit-form-element-header {
+    background: none;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: 36px;
+    outline: none;
+}
+.edit-form-element-header:focus {
+    background: white;
+    color: black;
+}
+.edit-form * {
+    margin: 5px;
+    border-radius: 5px;
+}
+.edit-form input[type="text"], .edit-form input[type="number"]{
+    padding: 0 5px;
+    border: none;
+    font-weight: bold;
+    width: auto;
+}
+.edit-form-element-margin * {
+    margin: 5px;
+}
+.edit-form-column {
+    flex-direction: column;
+}
+.edit-form-row {
+    flex-direction: row;
+}
+.edit-form-wrap {
+    flex-wrap: wrap;
+}
+.edit-form-align-position-center {
+    align-items: center;
+}
+.edit-form-position-center {
+    justify-content: center;
+}
+.edit-form-position-space-between {
+    justify-content: space-between;
+}
+.edit-form-position-end {
+    justify-content: end;
+}
+.edit-form-select {
+    background-color: darkred;
+}
+.edit-form-width-100 {
+    width: 100%;
+}
+.dimmer-input {
+    appearance:slider-vertical;
+    accent-color: whitesmoke;
+}
+.main{
+    text-align: left;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.main h1, .main h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.navbar div{
+        margin: 5px 5px;
+        padding: 20px 0;
+        background: rgba(255, 255, 255, 0.27);
+        border-radius: 10px;
+}
+.navbar div:hover{
+    transition:0.3s;animation: btnscale 0.8s;
+}
+@keyframes btnscale{
+ from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.04);
+  }
+}
+.navbar div a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btnstyle {
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    padding: 2px 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: white 1px solid;
+}
+.navbarform input:not(input[type="SUBMIT"]) { 
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+.navbarform{
+    display: grid;
+    justify-content: center;
+}
+.navbarform div:last-child{
+    text-align: center;
+}
+.navbarform div{
+    border: black 1px solid;
+    margin: 5px 5px;
+    padding: 10px 10px;
+    background: rgba(255,255,255,0.27);
+    border-radius: 10px;
+    color: white;
+}
+.navbarform div input:disabled{
+    background: rgba(0,0,0,0.2);
+    color: white;
+}
+.no-margin{
+    margin: 0;
+}
+.position-absolute{
+    position: absolute;
+}
+.position-relative{
+    position: relative;
+} 
+.savemessage{
+    color: red;
+    text-align: center;
+    border: 1px solid black;
+}
+.statisticval{
+    margin: 5px 5px;
+    padding: 5px 10px;
+    display: grid;
+    justify-content: center;
+}
+.statisticval div {
+    margin: 2px;
+}
+.statisticval div label{
+    display: inline;
+}
+.statisticval div input{
+    display: inline;
+    border: none;
+}
+.statisticval div input:focus, .statisticval div input:hover, .statisticval div input:active, .statisticval div input:disabled{
+    background-color: white;
+    border: none;
+    outline:none;
+}
+
+.save-form {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.save-form div {
+    color: red;
+    margin-top: 50px;
+    height: fit-content;
+    background: white;
+    font-size: 36px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+.select:hover {
+    /* background-color: orange !important;
+    opacity: 0.9 !important; */
+    border: 1px solid white
+}
+.panel-rgb{
+    width: 480px;
+    height: 480px;
+
+}
+.button-panel{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 0;
+    justify-content: center;
+    align-items: end;
+}
+.button-panel-light{
+    width: 10px;
+    height: 10px;
+    background: yellow;
+    border-radius: 0;
+}
+.button-select {
+    padding: 10px 20px;
+    background: white;
+}
+.button-select:hover{
+    background: gray;
+    color: white;
+}
+label{
+    display: block;
+}
+.width_480 {
+    width: 480px;
+}
+
+
+@media (max-width: 600px) {
+    .navbar{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 500px) {
+    div[formcontent]{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 400px) {
+    .navbar{
+        grid-template-columns: 1fr;
+    }
+    .navbarform{
+        justify-content: unset;
+    }
+}
